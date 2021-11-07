@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="url"
+		value="https://www.auden.com/short-term-loan"></parameter>
+	<parameter name="minAmount" value="300"></parameter>
+	
+	<test thread-count="5" name="Regression Test">
+		<classes>
+			<class name="testCases.BasicValidation" />
+			<class name="testCases.CookieTest"></class>
+			<class name="testCases.LoanTest"></class>
+		</classes>
+	</test> <!-- Regression Test -->
+</suite> <!-- Regression Suite -->
